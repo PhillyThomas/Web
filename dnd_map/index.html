@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="https://fonts.cdnfonts.com/css/reenie-beanie" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/clensey" rel="stylesheet">
+		<link rel="stylesheet" href="css.css">
+	</head>
+
+	<body>
+		<div class="mainContainer dragscroll">
+			<div class="zoomButtonsBox">
+				<div class="zoomButtons plus"></div>
+				<div class="zoomButtons minus"></div>
+			</div>
+			<div class="debug">
+				<h3>Debug</h3>
+				<div>Plot: <span id="coordinates">0-0</span></div>
+				<div>POI: <span id="poi_name">undefined</span></div>
+				<div>POI Type: <span id="poi_type">undefined</span></div>
+				<div>Zoom: <span id="zoom_level">1</span></div>
+				<div>Shops: <span id="debug_shops">1</span></div>
+			</div>
+			<!--[if lt IE 7]>
+				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+			
+			<div id="mapGrid" class="mapGrid"></div>
+		</div>
+		<div class="sideBar">
+			<div class="title_body">
+				<div id="area_name" class="title"></div>
+				<div id="area_desc" class="areaBody"></div>
+				<div id="area_shop_menu" class="area_shop_menu"></div>
+			</div>
+			<div id="shop_box" class="shop_box">
+				<div id="shop_box_photo" class="photo"><img id="shop_box_photo_img"></div>
+				<div id="shop_box_desc" class="desc"></div>
+				<div id="shop_box_items" class="items"></div>
+			</div>
+		</div>
+		
+		
+		<!-- <canvas id="mapCanvas" width="100%" height="100%"> </canvas> -->
+		<script src="areas.js" async defer></script>
+		<script src="shops.js" async defer></script>
+		<script src="js.js" async defer></script>
+		<script src="../libraries/dragscroll.js" async defer></script>
+		<script src="../libraries/wheelzoom.js" async defer></script>
+	</body>
+</html>
