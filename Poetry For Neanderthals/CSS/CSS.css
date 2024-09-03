@@ -1,0 +1,258 @@
+html, body {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background:rgb(255, 250, 243);;
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	justify-content:center;
+	overflow:hidden;
+	font-family: 'Cave-Stone', sans-serif;
+}
+
+button {
+	z-index:10;
+	padding:10px;
+	width: 80%;
+	border-radius:15px;
+	background-color:rgb(255, 250, 243);;
+	border:transparent;
+	font-family: 'Cave-Stone', sans-serif;
+	font-size:1.75rem;
+}
+
+span {
+	z-index:10;
+	font-family: 'Cave-Stone', sans-serif;
+	color:rgb(255, 250, 243);;
+	font-size:2.5rem;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	border:transparent;
+	font-family: 'Cave-Stone', sans-serif;
+	font-size:2rem;
+	/* padding: 0 1rem 0 1rem; */
+	border-radius:15px;
+}
+
+.blacktext {
+	color:black;
+}
+
+.maincontainer {
+	position:relative;
+	width:560px;
+	height:1440px;
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	position:absolute;
+	left:0;
+	top:0;
+	gap:15px;
+	z-index:10;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.playercount {
+
+}
+
+.menu-list {
+	height:65%;
+	width:80%;
+	border-radius:2rem;
+	background-color:rgb(255, 250, 243);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:Center;
+	gap:15px;
+	user-select:none;
+}
+
+.menu-list-item {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	background:rgb(255, 240, 240);
+	border-radius:1rem;
+	width:80%;
+	height:5rem;
+	padding: 0 1rem 0 1rem;
+	color:#8d8c87;
+}
+
+.selected {
+	background-color: greenyellow;
+	color:black;
+}
+
+.divider {
+	width:90%;
+	height:3px;
+	background-color:rgb(43, 43, 43);
+	border-radius:2x;
+}
+
+#setting-timer {
+	width:80%;
+	height: 3rem;
+}
+
+#timer-text {
+	color:black;
+	font-size:1.75rem;
+}
+
+.timeout {
+	color: white !important;
+	background-color: rgb(190, 0, 0) !important;
+}
+
+.greytext {
+	color:#8d8c87 !important;
+}
+
+.number-container {
+	width:80%;
+	height:150px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	z-index:10;
+	font-family: 'Cave-Stone', sans-serif;
+}
+
+.number-section {
+	width: 150px;
+	height:150px;
+	background:rgb(255, 250, 243);;
+	border-radius:15px;
+	font-size:7rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	user-select:none;
+}
+
+.playernames-list {
+	width:80%;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+}
+
+.playernames-item {
+	width: 100%;
+	height: 50px;
+	/* background:white; */
+}
+
+.minus {
+	color:red;
+}
+
+.plus {
+	color:green;
+}
+
+.playerNameHeader {
+	color:rgb(255, 250, 243);;
+	font-family: 'Cave-Stone', sans-serif;
+	font-size:1.5rem;
+	/* position:fixed; */
+	/* top:10px; */
+}
+
+.card {
+	width: 80%;
+	height:  60vh;
+	border-radius: 2rem;
+	background-color:rgb(255, 250, 243);
+	color:rgb(43, 43, 43);
+	font-family: 'Cave-Stone', sans-serif;
+	font-size:2.5rem;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	user-select:none;
+}
+
+.card-top {
+	width:100%;
+	height: 50%;
+	border-top-left-radius:2rem;
+	border-top-right-radius:2rem;
+	background-color:Transparent;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	color:#8d8c87;
+}
+.card-bottom{
+	width: 100%;
+	height:50%;
+	border-bottom-left-radius:2rem;
+	border-bottom-right-radius:2rem;
+	background-color:#8d8c87;
+	color:rgb(255, 250, 243);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+.score-1 {
+	height:3rem;
+	width:3rem;
+	border-radius:50%;
+	border:2px solid #8d8c87;
+	text-align:center;
+	vertical-align:middle;
+	line-height:3rem;
+}
+
+.score-3 {
+	height:3rem;
+	width:3rem;
+	border-radius:50%;
+	border:2px solid rgb(255, 250, 243);;
+	text-align:center;
+	vertical-align:middle;
+	line-height:3rem;
+}
+
+.cardvalue {
+	height: 9rem;
+	width: 100%;
+	display:flex;
+	justify-content:Center;
+	align-items:center;
+	text-align:center;
+}
+
+.background-image {
+	position:absolute;
+	left:0;
+	right:0;
+	z-index:0;
+}
+
+.timerbg {
+	bottom:0;
+}

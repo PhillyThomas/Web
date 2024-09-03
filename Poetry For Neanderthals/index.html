@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="CSS/CSS.css">
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<script src="JS/cards.js"></script>
+		<link href="https://fonts.cdnfonts.com/css/cave-stone" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="maincontainer">
+
+			<div class="section playercount">
+				<span>How many players?</span>
+				<div class="number-container">
+					<div class="number-section minus" id="playercount-minus">-</div>
+					<div class="number-section sum"><span class="blacktext" id="playercount-sum">2</span></div>
+					<div class="number-section plus" id="playercount-plus">+</div>
+				</div>
+				<button id="playercount-next">Next</button>
+
+			</div><!-- playercount end -->
+	
+			<div class="section playernames">
+				<div class="playernames-list" id="playernames-list">
+
+				</div>
+				<button id="playernames-next">Next</button>
+			</div><!-- playernames end -->
+
+			<div class="section menu">
+				<div class="menu-list" id="menu-list">
+					<h2>Select Game Mode:</h2>
+					<div class="menu-list-item selected" id="setting-standard">
+						<h2>Standard</h2>
+					</div>
+					<div class="menu-list-item" id="setting-phrases">
+						<h2>Phrases</h2>
+					</div>
+					<div class="divider"></div>
+					<h2>Time Limit</h2>
+					<span class="greytext" id="timer-text">No time limit</span>
+					<input type="range" id="setting-timer" min="0" max="300" value="0" step="5">
+				</div>
+				<button id="menu-next">Next</button>
+			</div><!-- menu end -->
+	
+			<div class="section main">
+				<div class="playerNameHeader"></div>
+				<div class="card"><span style="color:rgb(40,40,40)">Ready?</span></div>
+				<div class="next"></div>
+			</div><!-- main end -->
+
+
+			<div class="section background-image timerbg" style=" background-color:rgba(255,0,0,0.4); z-index:2; height:0%; ">
+
+			</div>
+
+			<div class="section background-image">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="560" height="1440" preserveAspectRatio="none" viewBox="0 0 560 1440">
+					<g mask="url(&quot;#SvgjsMask1029&quot;)" fill="none">
+						<rect width="560" height="1440" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient1030&quot;)"></rect>
+						<path d="M191.36 1213.39 a108.29 108.29 0 1 0 216.58 0 a108.29 108.29 0 1 0 -216.58 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float3"></path>
+						<path d="M282.83 837.61 a94.09 94.09 0 1 0 188.18 0 a94.09 94.09 0 1 0 -188.18 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float3"></path>
+						<path d="M189.3 165.32 a123 123 0 1 0 246 0 a123 123 0 1 0 -246 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float1"></path>
+						<path d="M113.51 401.26 a158.5 158.5 0 1 0 317 0 a158.5 158.5 0 1 0 -317 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float2"></path>
+						<path d="M-61.07 1019.57 a126.46 126.46 0 1 0 252.92 0 a126.46 126.46 0 1 0 -252.92 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float3"></path>
+						<path d="M-29.47 889.5 a163.26 163.26 0 1 0 326.52 0 a163.26 163.26 0 1 0 -326.52 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float2"></path>
+						<path d="M285.94 496.6 a145.74 145.74 0 1 0 291.48 0 a145.74 145.74 0 1 0 -291.48 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float3"></path>
+						<path d="M114.17 940.54 a177.33 177.33 0 1 0 354.66 0 a177.33 177.33 0 1 0 -354.66 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float2"></path>
+						<path d="M113.43 1017.96 a141.09 141.09 0 1 0 282.18 0 a141.09 141.09 0 1 0 -282.18 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float2"></path>
+						<path d="M218.67 209.4 a108.66 108.66 0 1 0 217.32 0 a108.66 108.66 0 1 0 -217.32 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float3"></path>
+						<path d="M385.08 1183.93 a104.49 104.49 0 1 0 208.98 0 a104.49 104.49 0 1 0 -208.98 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float1"></path>
+						<path d="M-163.34 1379.05 a164.69 164.69 0 1 0 329.38 0 a164.69 164.69 0 1 0 -329.38 0z" fill="rgba(28, 83, 142, 0.4)" class="triangle-float2"></path>
+					</g>
+					<defs>
+						<mask id="SvgjsMask1029">
+							<rect width="560" height="1440" fill="#ffffff"></rect>
+						</mask>
+						<linearGradient x1="-39.29%" y1="15.28%" x2="139.29%" y2="84.72%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1030">
+							<stop stop-color="#0e2a47" offset="0"></stop>
+							<stop stop-color="#00459e" offset="1"></stop>
+						</linearGradient>
+						<style>
+							@keyframes float1 {
+									0%{transform: translate(0, 0)}
+									50%{transform: translate(-10px, 0)}
+									100%{transform: translate(0, 0)}
+								}
+				
+								.triangle-float1 {
+									animation: float1 5s infinite;
+								}
+				
+								@keyframes float2 {
+									0%{transform: translate(0, 0)}
+									50%{transform: translate(-5px, -5px)}
+									100%{transform: translate(0, 0)}
+								}
+				
+								.triangle-float2 {
+									animation: float2 4s infinite;
+								}
+				
+								@keyframes float3 {
+									0%{transform: translate(0, 0)}
+									50%{transform: translate(0, -10px)}
+									100%{transform: translate(0, 0)}
+								}
+				
+								.triangle-float3 {
+									animation: float3 6s infinite;
+								}
+						</style>
+					</defs>
+				</svg>
+			</div>
+		</div><!-- maincontainer end -->
+		
+		
+		<script src="JS/JS.js" async defer></script>
+	</body>
+</html>
